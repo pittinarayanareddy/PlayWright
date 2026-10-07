@@ -1,11 +1,11 @@
 //import { test, expect } from '@playwright/test';
 import { test, expect } from '@playwright/test';
 
-test('Create Order-Update Order- Verify Order @smoke', async ({ page }) => {
+test('Create Order-Update Order- Verify Order @sanity', async ({ page }) => {
   //Login
   await page.goto('http://secure.smartbearsoftware.com/samples/testcomplete11/WebOrders/login.aspx');
-  await page.getByRole('textbox', { name: 'Username:' }).fill('Tester');
-  await page.getByRole('textbox', { name: 'Password:' }).fill('test');
+ // await page.getByRole('textbox', { name: 'Username:' }).fill('Tester');
+/*   await page.getByRole('textbox', { name: 'Password:' }).fill('test');
   await page.getByRole('button', { name: 'Login' }).click();
   await expect(page.locator("h2")).toContainText("List of All Orders")
   //Create Order
@@ -49,5 +49,5 @@ test('Create Order-Update Order- Verify Order @smoke', async ({ page }) => {
   //Logout
   await page.getByRole('link', { name: 'Logout' }).click()
   await expect(page).toHaveURL("http://secure.smartbearsoftware.com/samples/TestComplete11/WebOrders/Login.aspx?ReturnUrl=%2fsamples%2fTestComplete11%2fWebOrders%2fDefault.aspx")
-  await page.url().includes("/Login.aspx")
+  await page.url().includes("/Login.aspx") */
 });

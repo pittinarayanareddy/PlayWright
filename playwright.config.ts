@@ -58,7 +58,7 @@ export default defineConfig({
         //viewport: null,
         //colorScheme: 'dark',
         launchOptions: {
-          slowMo: 3000,
+         // slowMo: 3000,
            //args:["--start-fullscreen"]
            //args:["--start-maximized"]
         }

@@ -6,7 +6,7 @@
   "scripts": {
     "Smoke_Test": "playwright test --grep @smoke",
     "Smoke_Test_List": "playwright test --grep @smoke --list",
-    "Sanity_Test": "playwright test --grep @sanity"
+    "Sanity_Test": "playwright test --grep @release--list"
   },
   
   "keywords": [],

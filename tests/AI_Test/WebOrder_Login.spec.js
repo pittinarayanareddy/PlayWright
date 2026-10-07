@@ -7,7 +7,7 @@ const users = JSON.parse(
 );
 
 for (const user of users) {
-  test(`ZeroBank login - ${user.test_case}`, async ({ page }) => {
+  test(`ZeroBank login - ${user.test_case}@release`, async ({ page }) => {
     await page.goto('http://zero.webappsecurity.com/login.html');
     await page.locator('#user_login').fill(user.username);
     await page.locator('#user_password').fill(user.password);
