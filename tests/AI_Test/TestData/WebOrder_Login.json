@@ -1,0 +1,38 @@
+[
+  {
+    "test_case": "TC1_ValidCredentials",
+    "username": "username",
+    "password": "password",
+    "expected_result": "zero\\.webappsecurity\\.com\\/bank\\/account-summary\\.html"
+  },
+  {
+    "test_case": "TC2_InvalidUsername_ValidPassword",
+    "username": "wronguser",
+    "password": "password",
+    "expected_result": "Login and/or password are wrong."
+  },
+  {
+    "test_case": "TC3_ValidUsername_InvalidPassword",
+    "username": "username",
+    "password": "wrongpass",
+    "expected_result": "Login and/or password are wrong."
+  },
+  {
+    "test_case": "TC4_EmptyUsername_ValidPassword",
+    "username": "",
+    "password": "password",
+    "expected_result": "Login and/or password are wrong."
+  },
+  {
+    "test_case": "TC5_ValidUsername_EmptyPassword",
+    "username": "username",
+    "password": "",
+    "expected_result": "Login and/or password are wrong."
+  },
+  {
+    "test_case": "TC6_EmptyCredentials",
+    "username": "",
+    "password": "",
+    "expected_result": "Login and/or password are wrong."
+  }
+]
